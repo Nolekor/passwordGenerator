@@ -40,11 +40,19 @@ function setPasswords(lengthPsw: number) {
 }
 
 function getPassword() {
-  return parseInt(lengthEl.value) > 16 || parseInt(lengthEl.value) < 8
-    ? alert("please enter a number between 8 and 16")
-    : lengthEl.value === ""
-    ? setPasswords(8)
-    : setPasswords(parseInt(lengthEl.value));
+  // return parseInt(lengthEl.value) > 16 || parseInt(lengthEl.value) < 8
+  //   ? alert("please enter a number between 8 and 16")
+  //   : lengthEl.value === ""
+  //   ? setPasswords(8)
+  //   : setPasswords(parseInt(lengthEl.value));
+
+  if (parseInt(lengthEl.value) > 16 || parseInt(lengthEl.value) < 8) {
+    alert("please enter a number between 8 and 16");
+  } else if (lengthEl.value === "") {
+    setPasswords(8);
+  } else {
+    setPasswords(parseInt(lengthEl.value));
+  }
 }
 
 function copy(id) {
