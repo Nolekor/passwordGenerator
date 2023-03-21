@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-container">
+        <h1>
+          Generate a
+          <span class="greenWords"
+            ><br />
+            random password!</span
+          >
+        </h1>
+        <h4 class="mini-title">Never use insecure password again!</h4>
+      </div>
+      <hr />
+      <div class="btn-container">
+        <button class="btn-generate" onclick="getPassword()">
+          Generate Password
+        </button>
+        <span class="psw-text">Password Length</span
+        ><input
+          type="number"
+          class="btn-length"
+          name="passLength"
+          id="length-el"
+          min="8"
+          max="16"
+          placeholder="8 to 16"
+        />
+      </div>
+      <hr />
+      <div class="input-container">
+        <input class="psw-field" type="text" id="pswFieldOne" value="" />
+        <button class="btn-save" onClick="copy(pswFieldOne)">Copy!</button>
+        <input class="psw-field" type="text" id="pswFieldTwo" value="" />
+        <button class="btn-save" onClick="copy(pswFieldTwo)">Copy!</button>
+        <input class="psw-field" type="text" id="pswFieldThree" value="" />
+        <button class="btn-save" onClick="copy(pswFieldThree)">Copy!</button>
+        <input class="psw-field" type="text" id="pswFieldFour" value="" />
+        <button class="btn-save" onClick="copy(pswFieldFour)">Copy!</button>
+      </div>
+
+      <footer>
+        <hr />
+        <h6>Copyright 2023</h6>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

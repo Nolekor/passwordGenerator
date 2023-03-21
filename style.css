@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mini-title {
+  color: black;
+  padding-bottom: 5px;
+}
+.container {
+  margin: 50px auto;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 600px;
+  background-color: black;
+}
+.title-container {
+  text-align: center;
+  color: whitesmoke;
+  background: green;
+}
+.greenWords {
+  color: greenyellow;
+}
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.btn-generate {
+  width: 200px;
+  padding: 5px;
+  background-color: greenyellow;
+  border-radius: 5px;
+  margin-right: auto;
+  height: 44px;
+}
+
+.input-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.psw-field {
+  min-width: 140px;
+  height: 20px;
+  background-color: lightgreen;
+}
+.btn-save {
+  max-width: 50px;
+  background-color: lightblue;
+}
+.btn-saved {
+  background-color: red;
+}
+
+.btn-length {
+  min-width: 100px;
+  height: 40px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+footer {
+  color: white;
+  text-align: center;
+}
